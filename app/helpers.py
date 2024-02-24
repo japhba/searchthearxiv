@@ -42,3 +42,6 @@ def get_authors(papers):
 
 def error(msg):
     return json.dumps({"error": msg})
+
+from pathlib import Path
+SRC_ROOT = Path(__file__).parent.parent

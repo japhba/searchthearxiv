@@ -15,3 +15,5 @@ RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 
 CMD sh run.sh
+
+# docker run --rm -p 8000:8000/tcp -e OPENAI_API_KEY -e PINECONE_API_KEY searchthearxiv:latest   # forwards env vars

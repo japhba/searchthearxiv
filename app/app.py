@@ -16,7 +16,7 @@ MODEL = "text-embedding-ada-002"
 
 # connect to Pinecone
 pinecone.init(api_key=os.environ["PINECONE_API_KEY"])
-index = pinecone.Index("searchthearxiv")
+index = pinecone.Index("specter-2")
 
 @app.route("/")
 def home():
